@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+}
+header nav{
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+  /*background-color: rgba(234,238,11,0.7);*/
+  background-color: #fff;
+}
+header nav img{
+  display: block;
+  width: 48px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+header nav ul{
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+header nav li{
+  list-style: none;
+  float: left;
+  padding: 0 16px;
+}
+header nav li a{
+  text-decoration: none;
+  color: #111;
+  font-weight:900;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #30cfd0 0%, #9933FF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* CONTENTS */
+section{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: rgba(9,9,9,0.15);
+}
+#wrapper{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 25px;  
+}
+span, p{
+  font-size: 18px;
+}
+
+input[type=number],select{
+  padding: 5px 0;
+  background:none;
+  font-size: 18px;
+  border: 2px solid;
+  border-radius: 0.5rem;
+}
+input[type=button]{
+  padding: 10px 0;
+  background: none;
+  border: 2px solid;
+  border-radius: 100px;
+}
+select{
+  text-align: center;
+  text-align-last: center;
+}
+.fields{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+.fields select{
+  width: 95px;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(9,9,9,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

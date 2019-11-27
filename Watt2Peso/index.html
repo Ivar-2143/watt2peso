@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watt2Peso</title>
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="./scripts/eGenerate.js"></script>
+    <link rel="stylesheet" href="./styles/indexStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/96px-lightning-bolt-96.png" alt="">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="tips.html">Tips</a>
+                </li>
+            </ul>
+        </nav>
+    </header>  
+    <section>
+        <div id="wrapper">
+            <span>
+            Appliance
+            </span>
+            <select name="" id="">
+
+            </select>
+            <span>
+                Wattage
+            </span>
+            <input type="number" name="" id="Wattage">
+            <div class="fields" id="text-fields"> 
+                <p>Hours Used</p>
+                
+                <p>Days Used</p>
+                 
+                <p>Weeks Used</p>
+            </div>
+            <div class="fields">
+                <select name="" id="hoursUsed">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                </select>
+                <select name="" id="daysUsed">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <select name="" id="weekUsed">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <input id="calculate" type="button" value="Calculate">
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <span>Per Hour : <span id="perHour"></span></span>
+            <span>Per Day : <span id="perDay"></span></span>
+            <span>Per Week : <span id="perWeek"></span></span>
+            <span>Per Month : <span id="perMonth"></span></span>
+        </div>
+      
+      </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
